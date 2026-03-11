@@ -29,6 +29,8 @@ Space Complexity: O(1)
 Author: Suhas Bharti
 */
 
+import java.util.*;
+
 public class MaxSubarraySumBruteForce{
     public static void main(String[] args) {
         int[] arr = {-2, 3, -4, 5, 7, 9};
@@ -39,7 +41,7 @@ public class MaxSubarraySumBruteForce{
 
     //Method to perform MaxSubArray sum using Brute Force
     public static void maxSubArray(int[] arr) {
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
 
         for(int i=0; i<arr.length; i++){
             for(int j=i; j<arr.length; j++){
@@ -52,6 +54,6 @@ public class MaxSubarraySumBruteForce{
                 }
             }
         }
-        System.out.println(maxSum);
+        System.out.println("Maximum Subarray Sum (Brute Force): " + maxSum);
     }
 }
