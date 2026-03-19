@@ -29,12 +29,13 @@ public class ReverseString{
         String str = "Noon";
 
         String result = reverseString(str);
-        System.out.println("Reverserd string: " + result);
+        System.out.println("Reversed string: " + result);
     }
 
-    //
+    // Method to reverse a string using StringBuilder
     public static String reverseString(String str){
 
+        // Handle edge case
         if(str == null || str.length() == 0) {
             return str;
         }
