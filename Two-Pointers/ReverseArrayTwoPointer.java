@@ -37,17 +37,19 @@ public class ReverseArrayTwoPointer {
         }
     }
 
-    public static void reverseArray(int[] arr) {
+    public static int[] reverseArray(int[] arr) {
         int start = 0, end = arr.length-1;
 
         //Swapping
         while(start < end) {
-            int temp = arr[end];
-            arr[end] = arr[start];
-            arr[start] = temp;
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
 
             start++;
             end--;
         }
+
+        return arr;
     }
 }
