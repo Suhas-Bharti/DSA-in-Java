@@ -29,7 +29,6 @@ Space Complexity: O(1)
 Author: Suhas Bharti
 */
 
-import java.util.*;
 
 public class Factorial {
     public static void main(String[] args) {

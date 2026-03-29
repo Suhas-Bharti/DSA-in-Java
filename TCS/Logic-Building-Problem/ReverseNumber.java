@@ -26,7 +26,6 @@ Space Complexity: O(1)
 Author: Suhas Bharti
 */
 
-import java.util.*;
 
 public class ReverseNumber {
 

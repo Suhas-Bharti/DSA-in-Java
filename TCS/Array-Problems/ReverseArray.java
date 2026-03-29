@@ -51,6 +51,8 @@ public class ReverseArray {
         }
 
         reverseArray(arr); // Method call
+
+        sc.close();
     }
 
     // Method to print array in reverse order
@@ -59,5 +61,6 @@ public class ReverseArray {
         for(int i=arr.length-1; i>=0; i--) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
     }
 }
